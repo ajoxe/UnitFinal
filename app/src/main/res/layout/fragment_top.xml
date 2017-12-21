@@ -1,13 +1,35 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nyc.c4q.unitfinal.TopFragment">
+    android:orientation="vertical"
+    tools:context="nyc.c4q.unitfinal.TopFragment"
+    android:padding="32dp"
+    android:background="@color/cardview_dark_background">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/topfrag_book_title__textview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="Title"
+        android:textColor="@color/cardview_light_background"/>
+    <TextView
+        android:id="@+id/topfrag_book_author_textview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/cardview_light_background"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Author"/>
+    <TextView
+        android:id="@+id/topfrag_book_year_textview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="year"
+        android:textColor="@color/cardview_light_background"/>
 
-</FrameLayout>
+</LinearLayout>
